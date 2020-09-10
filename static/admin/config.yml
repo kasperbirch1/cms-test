@@ -14,8 +14,8 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
 
-  - name: Products
-    label: products
+  - label: products
+    name: Products
     folder: /content/products
     create: true
     fields:
