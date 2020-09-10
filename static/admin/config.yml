@@ -4,8 +4,8 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 collections:
-  - name: blog
-    label: Blog
+  - label: Blog
+    name: blog
     folder: /content/blog
     create: true
     fields:
@@ -14,7 +14,7 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
 
-  - label: products
+  - label: Products
     name: Products
     folder: /content/products
     create: true
