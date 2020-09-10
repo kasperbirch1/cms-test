@@ -1,10 +1,10 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import SEO from "../components/seo"
 
 export default function Template({ data }) {
+  console.log("data", data);
   const { markdownRemark } = data
-  console.log("markdownRemark", markdownRemark);
   const { frontmatter, html } = markdownRemark
   return (
     <>

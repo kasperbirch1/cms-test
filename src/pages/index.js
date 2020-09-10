@@ -4,6 +4,7 @@ import { Wrapper } from '../components/page-elements'
 import Image from '../components/image'
 import SEO from '../components/seo'
 import IntersectionObserverAnimation from '../components/Animations/IntersectionObserverAnimation'
+import Bloglist from '../components/BlogList/Bloglist'
 
 const IndexPage = () => {
   const Customvariants1 = {
@@ -29,7 +30,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Wrapper>
         <h1>Welcome to your new Gatsby site.</h1>
-
+        <Bloglist />
         <div style={{ height: '150vh', outline: '1px dotted red' }}></div>
         <IntersectionObserverAnimation rootMarginBotton="-100px" Customvariants={Customvariants1} triggerOnce={true} >
           <span>section 1</span>

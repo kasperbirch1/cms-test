@@ -2,9 +2,6 @@ const path = require(`path`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
-
-    const bookTemplate = path.resolve(`src/templates/blogTemplate.js`)
-
     const result = await graphql(`
     {
       allMarkdownRemark {
@@ -27,7 +24,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
             path: node.frontmatter.path,
-            component: bookTemplate,
+            component: path.resolve(`src/templates/blogTemplate.js`),
             context: {
                 path: node.frontmatter.path
             }
