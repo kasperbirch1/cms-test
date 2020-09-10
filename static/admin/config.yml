@@ -6,7 +6,7 @@ public_folder: /assets
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: content/blog
     create: true
     fields:
       - { name: path, label: Path }
@@ -15,7 +15,7 @@ collections:
       - { name: body, label: Body, widget: markdown }
   - name: product
     label: product
-    folder: product
+    folder: content/product
     create: true
     fields:
       - { name: path, label: Path }
