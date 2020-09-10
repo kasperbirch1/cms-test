@@ -1,14 +1,12 @@
 import React from 'react'
 import GalleryContainer from '../components/Gallery/GalleryContainer'
-import { Wrapper } from '../components/page-elements'
-
 
 function gallery() {
     return (
-        <Wrapper>
+        <section className="wrapper">
             <h1>hej gallery</h1>
             <GalleryContainer />
-        </Wrapper>
+        </section>
     )
 }
 

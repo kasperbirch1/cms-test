@@ -7,12 +7,12 @@ export default function Template({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
-    <>
+    <section className="wrapper">
       <SEO title={frontmatter.title} />
       <h1>{frontmatter.title}</h1>
       <div>Publish Date: {frontmatter.date}</div>
       <article dangerouslySetInnerHTML={{ __html: html }} />
-    </>
+    </section>
   )
 }
 

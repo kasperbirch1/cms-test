@@ -145,4 +145,10 @@ export const GlobalStyle = createGlobalStyle`
 
     }
   }
+
+  .wrapper {
+    width: 90%;
+    max-width: var(--wrapper-max-size);
+    margin: 0 auto;
+  }
 `

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Wrapper } from '../components/page-elements'
 import Image from '../components/image'
 import SEO from '../components/seo'
 import IntersectionObserverAnimation from '../components/Animations/IntersectionObserverAnimation'
@@ -28,7 +27,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
-      <Wrapper>
+      <section className="wrapper">
         <h1>Welcome to your new Gatsby site.</h1>
         <Bloglist />
         <div style={{ height: '150vh', outline: '1px dotted red' }}></div>
@@ -48,7 +47,7 @@ const IndexPage = () => {
           <p>Now go build something great.</p>
         </IntersectionObserverAnimation>
         <Link to="/page-2/">Go to page 2</Link>
-      </Wrapper>
+      </section>
     </>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from 'styled-components'
 const StyledBloglistSection = styled.section`
    
@@ -21,14 +21,16 @@ const Bloglist = () => {
       }  
     `)
     const { nodes } = data.allMarkdownRemark
-    console.log("fisse", nodes);
+    console.log("nodes", nodes);
     return (
         <StyledBloglistSection>
             <ul>
                 {nodes.map((element, index) => {
                     return (
                         <li key={index}>
-                            <p>{element.frontmatter.title}</p>
+                            <Link to={element.frontmatter.path}>
+                                <p>{element.frontmatter.title}</p>
+                            </Link>
                         </li>
                     )
                 })}
