@@ -1,11 +1,13 @@
-import React from "react"
-import { graphql } from "gatsby"
-import SEO from "../components/seo"
+import React from 'react'
+import { graphql } from 'gatsby'
+import SEO from '../components/seo'
 
 export default function Template({ data }) {
-  console.log("data", data);
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
+  console.log('frontmatter', frontmatter)
+  console.log('html', html)
+
   return (
     <section className="wrapper">
       <SEO title={frontmatter.title} />
@@ -17,14 +19,13 @@ export default function Template({ data }) {
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
+  query SingleBlogQuery($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
-        path
         title
         date
       }
+      html
     }
   }
 `
