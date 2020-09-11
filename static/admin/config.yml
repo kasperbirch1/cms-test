@@ -6,22 +6,20 @@ public_folder: /assets
 collections:
   - label: Blog
     name: blog
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     folder: /content/blog
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
 
   - label: Products
     name: Products
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     folder: /content/products
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
