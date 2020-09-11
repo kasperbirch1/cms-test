@@ -40,7 +40,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: node.frontmatter.path,
       component: path.resolve(`src/templates/blogTemplate.js`),
       context: {
-        path: node.frontmatter.path
+        abe: node.frontmatter.path
       }
     })
   })
