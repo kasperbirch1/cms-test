@@ -21,7 +21,7 @@ const Bloglist = () => {
       }  
     `)
     const { nodes } = data.allMarkdownRemark
-    console.log("nodes", nodes);
+    // console.log("nodes", nodes);
     return (
         <StyledBloglistSection>
             <ul>
