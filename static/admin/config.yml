@@ -27,5 +27,6 @@ collections:
           name: 'tags',
           label: 'Tags',
           widget: 'list',
-          default: ['news'],
+          summary: '{{fields.image}}',
+          fields: { label: Image, name: image, widget: image },
         }
