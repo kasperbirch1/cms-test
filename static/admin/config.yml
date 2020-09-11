@@ -4,6 +4,24 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 collections:
+  - label: Opskrifter
+    name: opskirfter
+    folder: /content/opskirfter
+    create: true
+    fields:
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - {
+          label: Indigrenser,
+          name: indigrenser,
+          widget: list,
+          fields:
+            [
+              { label: Name, name: text, widget: text },
+              { label: CL, name: cl , widget: number },
+            ],
+        },
+
   - label: Blog
     name: blog
     slug: '{{slug}}'
