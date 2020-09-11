@@ -12,15 +12,23 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - {
-          label: Indigrenser,
-          name: indigrenser,
-          widget: list,
+          label: Opskrifter,
+          name: opskirft,
+          widget: object,
           fields:
             [
-              { label: Name, name: text, widget: text },
-              { label: CL, name: cl , widget: number },
+              {
+                label: Indigrens,
+                name: indigrens,
+                widget: list,
+                fields:
+                  [
+                    { label: cl, name: cl, widget: number },
+                    { label: Text, name: text, widget: text },
+                  ],
+              },
             ],
-        },
+        }
 
   - label: Blog
     name: blog
