@@ -14,11 +14,19 @@ module.exports = {
         name: `blogs`,
         path: `${__dirname}/content/blog`,
       },
-    }, {
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blogs`,
         path: `${__dirname}/content/products`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `opskirfter`,
+        path: `${__dirname}/content/opskirfter`,
       },
     },
     `gatsby-transformer-remark`,
