@@ -22,12 +22,6 @@ collections:
         required: true
         hint: >-
           The date the post is published
-      - widget: string
-        name: slug
-        label: Slug
-        required: true
-        hint: >-
-          The post URL (do not include folder or file extension)
       - widget: relation
         name: author
         label: Author
@@ -67,12 +61,6 @@ collections:
         required: true
         hint: >-
           The name of the author
-      - widget: string
-        name: slug
-        label: Slug
-        required: true
-        hint: >-
-          The post URL (do not include folder or file extension)
       - widget: markdown
         name: body
         label: Content
