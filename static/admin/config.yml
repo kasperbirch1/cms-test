@@ -14,33 +14,12 @@ collections:
         name: title
         widget: string
         required: true
-      - label: 'Testimonials'
-        name: 'testimonials'
+      - label: 'Model Details'
+        name: 'model-details'
         widget: 'list'
         summary: '{{fields.quote}} - {{fields.author.name}}'
         fields:
-          - {
-              label: Quote,
-              name: quote,
-              widget: string,
-              default: 'Everything is awesome!',
-            }
-          - label: Author
-            name: author
-            widget: object
-            fields:
-              - {
-                  label: Name,
-                  name: name,
-                  widget: string,
-                  default: 'Emmet',
-                }
-              - {
-                  label: Avatar,
-                  name: avatar,
-                  widget: image,
-                  default: '/img/emmet.jpg',
-                }
+          - { label: Author, name: author, widget: string }
 
   - label: Posts
     name: post
