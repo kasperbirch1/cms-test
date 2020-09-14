@@ -10,10 +10,37 @@ collections:
     create: true
     slug: '{{slug}}'
     fields:
-      - widget: string
+      - label: Title
         name: title
-        label: Title
+        widget: string
         required: true
+      - label: 'Testimonials'
+        name: 'testimonials'
+        widget: 'list'
+        summary: '{{fields.quote}} - {{fields.author.name}}'
+        fields:
+          - {
+              label: Quote,
+              name: quote,
+              widget: string,
+              default: 'Everything is awesome!',
+            }
+          - label: Author
+            name: author
+            widget: object
+            fields:
+              - {
+                  label: Name,
+                  name: name,
+                  widget: string,
+                  default: 'Emmet',
+                }
+              - {
+                  label: Avatar,
+                  name: avatar,
+                  widget: image,
+                  default: '/img/emmet.jpg',
+                }
 
   - label: Posts
     name: post
