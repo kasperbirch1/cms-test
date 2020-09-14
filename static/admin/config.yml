@@ -14,21 +14,6 @@ collections:
         name: title
         widget: string
         required: true
-      - label: 'Model Details'
-        name: 'model-details'
-        widget: 'list'
-        summary: '{{fields.author}}'
-        fields:
-          - { label: Author, name: author, widget: string }
-          - { label: Address,
-              name: address,
-              widget: "object",
-              collapsed: true,
-              fields: 
-              - {label: "Street Address", name: "street", widget: "string"}
-              - {label: "City", name: "city", widget: "string"}
-              - {label: "Postal Code", name: "post-code", widget: "string"}
-      }
 
   - label: Posts
     name: post
