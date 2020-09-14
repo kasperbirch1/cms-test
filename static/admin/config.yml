@@ -20,7 +20,7 @@ collections:
         widget: 'list'
         summary: '{{fields.image}}'
         fields:
-          - { label: Image, name: image, widget: image }
+          - { label: Imageobject, name: imageobject, widget: object, fields: label: Image, name: image, widget: image  }
 
   - label: Posts
     name: post
