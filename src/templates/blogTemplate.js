@@ -24,7 +24,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date
-        galleryImages
       }
       html
     }
