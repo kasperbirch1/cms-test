@@ -4,37 +4,6 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 collections:
-  - Label: Models
-    name: models
-    folder: content/models
-    create: true
-    slug: '{{slug}}'
-    fields:
-      - widget: string
-        name: title
-        label: Title
-        
-      - label: Opskrifter,
-        name: opskirft,
-        widget: object,
-        fields:
-          [
-            {
-              label: Indigrens,
-              name: indigrens,
-              widget: list,
-              fields:
-                [
-                  { label: cl, name: cl, widget: number },
-                  { label: Text, name: text, widget: text },
-                ],
-            },
-          ],
-      
-
-
-
-
   - label: Posts
     name: post
     folder: content/posts
