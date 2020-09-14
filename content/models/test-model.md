@@ -1,6 +1,7 @@
 ---
 title: test model
 galleryImages:
-  - /assets/schueco_skyvedoer.jpg
-  - /assets/skydedoer_cecis.jpg
+  - name: kasper nye
+    alt: 'her er den nye '
+    image: /assets/skydedoer_cecis.jpg
 ---
