@@ -24,6 +24,15 @@ collections:
           - { label: alt, name: alt, widget: string }
           - { label: Image, name: image, widget: image }
 
+          - label: 'Address TEST'
+        name: 'address-test'
+        widget: 'list'
+        summary: '{{fields.street}}'
+        fields:
+          - { label: Street, name: street, widget: string }
+          - { label: Town, name: town, widget: string }
+          - { label: zip, name: zip, widget: number }
+
   - label: Posts
     name: post
     folder: content/posts
