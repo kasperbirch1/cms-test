@@ -19,7 +19,7 @@ collections:
         widget: 'list'
         summary: '{{fields.quote}} - {{fields.author.name}}'
         fields:
-          - { label: Author, name: author, widget: string }
+          -  label: Author, name: author, widget: string 
 
   - label: Posts
     name: post
