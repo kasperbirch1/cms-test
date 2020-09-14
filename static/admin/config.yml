@@ -17,9 +17,9 @@ collections:
       - label: 'Model Details'
         name: 'model-details'
         widget: 'list'
-        summary: '{{fields.quote}} - {{fields.author.name}}'
+        summary: '{{fields.author}}'
         fields:
-          -  label: Author, name: author, widget: string 
+          - { label: Author, name: author, widget: string }
 
   - label: Posts
     name: post
