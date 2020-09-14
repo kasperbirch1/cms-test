@@ -4,17 +4,13 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 collections:
-- label: Homepage
+  - label: Homepage
     name: indexpage
     folder: content/pages
     create: true
     slug: '{{slug}}'
     fields:
-      - label: Title
-        name: title
-        widget: string
-        required: true
-
+      - { label: 'Title', name: 'title', widget: 'string' }
 
   - label: Models
     name: models
