@@ -15,17 +15,15 @@ collections:
         widget: string
         required: true
 
-      - label: 'Gallery'
-        name: 'galleryImages'
-        widget: 'list'
-        summary: '{{fields.image}}'
-        field:
-          [
-            label: Imageobject,
-            name: imageobject,
-            widget: object,
-            fields: { -label: image, name: image, widget: image },
-          ]
+      -{label: Gallery
+        name: galleryImages
+        widget: list,
+          fields:
+            [
+              { label: Quote, name: quote, widget: string },
+              { label: Author, name: author, widget: string },
+            ]
+            }
 
   - label: Posts
     name: post
